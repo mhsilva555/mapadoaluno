@@ -27,6 +27,7 @@ Route::middleware('auth')->group(function () {
     })->name('dashboard');
 
     Route::get('/enviar-material', App\Livewire\Material\Upload::class)->name('material.upload');
+    Route::get('/material/{id}', App\Livewire\Material\Show::class)->name('material.show');
     
     Route::post('/logout', function () {
         Illuminate\Support\Facades\Auth::logout();

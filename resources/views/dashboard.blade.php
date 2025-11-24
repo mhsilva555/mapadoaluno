@@ -45,7 +45,7 @@
     <!-- Material Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Card 1 -->
-        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition group cursor-pointer">
+        <a href="{{ route('material.show', 1) }}" class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition group cursor-pointer block">
             <div class="h-40 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-t-2xl relative overflow-hidden p-6 flex items-center justify-center">
                 <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-2 py-1 rounded-md text-xs font-bold text-blue-600 uppercase tracking-wide">Resumo</div>
                 <svg class="w-16 h-16 text-blue-200 group-hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"></path></svg>
@@ -69,10 +69,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
 
         <!-- Card 2 -->
-        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition group cursor-pointer">
+        <a href="{{ route('material.show', 2) }}" class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition group cursor-pointer block">
             <div class="h-40 bg-gradient-to-br from-purple-50 to-pink-50 rounded-t-2xl relative overflow-hidden p-6 flex items-center justify-center">
                  <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-2 py-1 rounded-md text-xs font-bold text-purple-600 uppercase tracking-wide">Prova</div>
                 <svg class="w-16 h-16 text-purple-200 group-hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h12a1 1 0 100-2H7zm0 4a1 1 0 000 2h12a1 1 0 100-2H7zm0 4a1 1 0 000 2h12a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
@@ -96,10 +96,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
 
         <!-- Card 3 -->
-        <div class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition group cursor-pointer">
+        <a href="{{ route('material.show', 3) }}" class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition group cursor-pointer block">
             <div class="h-40 bg-gradient-to-br from-green-50 to-teal-50 rounded-t-2xl relative overflow-hidden p-6 flex items-center justify-center">
                 <div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-2 py-1 rounded-md text-xs font-bold text-green-600 uppercase tracking-wide">Mapa Mental</div>
                 <svg class="w-16 h-16 text-green-200 group-hover:scale-110 transition duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 00-1.391-.836l-3.9 1.3a1 1 0 000 1.92l3.9 1.3a1 1 0 001.391-.836 1 1 0 00.045-.352V6.628a1 1 0 00-.045-.352zM6 13a2 2 0 012-2 1 1 0 012 2v6a2 2 0 01-2 2 1 1 0 01-2-2v-6zM14 13a2 2 0 012-2 1 1 0 012 2v6a2 2 0 01-2 2 1 1 0 01-2-2v-6z"></path></svg>
@@ -123,6 +123,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
 </x-layouts.dashboard>
