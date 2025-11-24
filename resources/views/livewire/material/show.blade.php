@@ -28,19 +28,19 @@
             </div>
 
             <!-- Document Preview -->
-            <div class="bg-gray-100 rounded-2xl border border-gray-200 aspect-[4/3] flex items-center justify-center relative overflow-hidden group">
-                <!-- Placeholder Content -->
-                <div class="text-center">
-                    <svg class="w-24 h-24 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                    <p class="text-gray-500 font-medium">Pré-visualização do Documento</p>
-                    <p class="text-sm text-gray-400 mt-2">15 páginas</p>
-                </div>
+            <div class="bg-gray-100 rounded-2xl border border-gray-200 aspect-[4/3] relative overflow-hidden group">
+                <!-- PDF Iframe -->
+                <iframe src="https://pdfobject.com/pdf/sample.pdf#toolbar=0&navpanes=0&scrollbar=0" class="w-full h-full pointer-events-none" frameborder="0"></iframe>
                 
-                <!-- Blur Overlay -->
-                <div class="absolute inset-0 bg-white/50 backdrop-blur-[2px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <button wire:click="download" class="px-6 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg transform hover:scale-105">
-                        Baixar para ler completo
-                    </button>
+                <!-- Blur/Gradient Overlay -->
+                <div class="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-b from-transparent via-white/90 to-white backdrop-blur-[2px] flex items-center justify-center">
+                    <div class="text-center p-6">
+                        <p class="text-gray-900 font-bold text-lg mb-2">Este é apenas um trecho</p>
+                        <p class="text-gray-500 mb-6">Para visualizar o documento completo, faça o download.</p>
+                        <button wire:click="download" class="px-8 py-3 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-600/20 transform hover:scale-105">
+                            Baixar Material Completo
+                        </button>
+                    </div>
                 </div>
             </div>
 
