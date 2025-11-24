@@ -68,15 +68,15 @@
                 <p class="text-sm text-gray-500 mb-4">Ou cadastre-se com:</p>
                 <!-- Social Login -->
                 <div class="grid grid-cols-3 gap-3">
-                    <button class="flex items-center justify-center px-4 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition duration-200">
+                    <a href="{{ route('social.redirect', 'google') }}" onclick="event.preventDefault(); window.open(this.href, 'google-login', 'width=500,height=600');" class="flex items-center justify-center px-4 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition duration-200">
                         <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5" alt="Google">
-                    </button>
-                    <button class="flex items-center justify-center px-4 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition duration-200">
+                    </a>
+                    <a href="{{ route('social.redirect', 'facebook') }}" onclick="event.preventDefault(); window.open(this.href, 'facebook-login', 'width=500,height=600');" class="flex items-center justify-center px-4 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition duration-200">
                         <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" class="w-5 h-5" alt="Facebook">
-                    </button>
-                    <button class="flex items-center justify-center px-4 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition duration-200">
+                    </a>
+                    <a href="{{ route('social.redirect', 'apple') }}" onclick="event.preventDefault(); window.open(this.href, 'apple-login', 'width=500,height=600');" class="flex items-center justify-center px-4 py-2.5 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300 transition duration-200">
                         <img src="https://www.svgrepo.com/show/511330/apple-173.svg" class="w-5 h-5" alt="Apple">
-                    </button>
+                    </a>
                 </div>
             </div>
 
