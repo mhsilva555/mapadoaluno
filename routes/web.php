@@ -26,6 +26,8 @@ Route::middleware('auth')->group(function () {
         return view('dashboard');
     })->name('dashboard');
 
+    Route::get('/minha-conta', App\Livewire\Account\Profile::class)->name('account.profile');
+
     Route::get('/enviar-material', App\Livewire\Material\Upload::class)->name('material.upload');
     Route::get('/material/{id}', App\Livewire\Material\Show::class)->name('material.show');
     
